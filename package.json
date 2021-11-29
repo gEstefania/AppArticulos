@@ -10,8 +10,15 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/material-top-tabs": "^6.0.6",
+    "@react-navigation/native": "^6.0.6",
     "react": "17.0.2",
-    "react-native": "0.66.3"
+    "react-native": "0.66.3",
+    "react-native-pager-view": "^5.4.9",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.9.0",
+    "react-native-tab-view": "^3.1.1",
+    "react-redux": "^7.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -25,5 +32,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
   }
 }
