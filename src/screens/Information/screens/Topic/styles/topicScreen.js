@@ -32,7 +32,6 @@ export default StyleSheet.create({
     marginBottom: 20,
     padding: 20,
     borderRadius: 25,
-    backgroundColor: '#e55773',
   },
   btnText: {
     fontSize: 16,

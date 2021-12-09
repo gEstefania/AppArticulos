@@ -6,10 +6,10 @@ export default StyleSheet.create({
     margin: 20,
   },
   banner: {
-    flex: 3,
+    height: 150,
     justifyContent: 'center',
     marginBottom: 20,
-    padding: 20,
+    paddingHorizontal: 35,
     borderRadius: 20,
   },
   bannerTitle: {

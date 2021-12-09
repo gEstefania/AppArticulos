@@ -33,6 +33,5 @@ export default StyleSheet.create({
     maxWidth: 80,
     fontWeight: '600',
     color: '#fff',
-
   },
 });
