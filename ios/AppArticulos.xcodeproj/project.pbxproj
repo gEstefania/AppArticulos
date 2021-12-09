@@ -11,11 +11,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2621283F385045D094BCC52F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */; };
 		3011EEBDF4308E8412B58944 /* libPods-AppArticulos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DB2603C408B1CADC37BEE3 /* libPods-AppArticulos.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A5311560F6A86371693E16A9 /* libPods-AppArticulos-AppArticulosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5DA2B97718CBE09BF61FA /* libPods-AppArticulos-AppArticulosTests.a */; };
 		91EFCFD15E7740E0AB420423 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */; };
-		2621283F385045D094BCC52F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */; };
+		A5311560F6A86371693E16A9 /* libPods-AppArticulos-AppArticulosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E5DA2B97718CBE09BF61FA /* libPods-AppArticulos-AppArticulosTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +42,12 @@
 		22E5DA2B97718CBE09BF61FA /* libPods-AppArticulos-AppArticulosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppArticulos-AppArticulosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48798CFF5B4897DAAD956624 /* Pods-AppArticulos-AppArticulosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos-AppArticulosTests.release.xcconfig"; path = "Target Support Files/Pods-AppArticulos-AppArticulosTests/Pods-AppArticulos-AppArticulosTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppArticulos/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		9110D9253EFB65618EBE01E1 /* Pods-AppArticulos-AppArticulosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos-AppArticulosTests.debug.xcconfig"; path = "Target Support Files/Pods-AppArticulos-AppArticulosTests/Pods-AppArticulos-AppArticulosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		DCD1E1AF7FEF90B264058CE4 /* Pods-AppArticulos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos.debug.xcconfig"; path = "Target Support Files/Pods-AppArticulos/Pods-AppArticulos.debug.xcconfig"; sourceTree = "<group>"; };
 		E5DB2603C408B1CADC37BEE3 /* libPods-AppArticulos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppArticulos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,16 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = AppArticulos;
+			sourceTree = "<group>";
+		};
+		2AC04AAE86EA4A4DB72C693F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */,
+				A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -153,16 +163,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		2AC04AAE86EA4A4DB72C693F /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */,
-				A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
