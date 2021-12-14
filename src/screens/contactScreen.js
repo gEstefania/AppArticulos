@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { View, Text } from "react-native";
 
-const trainingScreen = () => {
+const contactScreen = () => {
     return (
         <View>
-            <Text>Formacion</Text>
+            <Text> Hablemos </Text>
         </View>
     )
 }
 
-export default trainingScreen;
+export default contactScreen;
