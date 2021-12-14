@@ -44,7 +44,7 @@ function homeScreen() {
       colors={['#ff9b04', '#ff000a' ]}
       style={{flex: 1}}
       start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
+      end={{ x: 1.4, y: 1.4 }}
       locations={[0.2, 0.4]}
     >
       <View style={{backgroundColor: 'transparent', height: 125, justifyContent: 'flex-end', alignItems: 'center'}}>
