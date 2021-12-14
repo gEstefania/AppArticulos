@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     marginLeft: 20,
+    marginBottom: 20,
   },
   cardsList: {
     marginTop: 20,

@@ -5,11 +5,11 @@ export default StyleSheet.create({
     flex: 1,
   },
   subContainer: {
-    flex:0.75,
+    flex: 1,
     margin: 20,
   },
   swiperContainer: {
-    flex:1,
+    flex: 1,
     alignItems:"flex-start",
     justifyContent:"flex-end",
     backgroundColor:"#ff9b04",
