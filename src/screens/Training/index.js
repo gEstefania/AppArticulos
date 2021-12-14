@@ -2,8 +2,9 @@ import { View, Image, Text, TouchableOpacity } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import styles from './styles/index';
+import courseTopMenu from '../../navigation/courseTopMenu';
 
-const index = () => {
+const index = ({navigation}) => {
   const dataList = [
     {
       name: 'Desde cero',
@@ -33,7 +34,10 @@ const index = () => {
 
   const renderList = ({item}) => {
     return (
-      <TouchableOpacity style={styles.btnCard}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("TopMenu")}
+        style={styles.btnCard}
+      >
         <View style={styles.container}>
           <View style={{flex: 1}}>
             <Text style={styles.cardTitle}>{item.name}</Text>
