@@ -66,7 +66,7 @@ function homeScreen() {
         screenOptions={{
           tabBarLabelStyle: { fontWeight: '600', fontFamily: 'Poppins-Bold', textTransform: 'capitalize', color: '#fff', fontSize: 16},
           tabBarStyle: { backgroundColor: 'transparent', paddingVertical: 15, },
-          tabBarIndicatorStyle: {backgroundColor: 'silver', height: 7, borderRadius: 50},
+          tabBarIndicatorStyle: {backgroundColor: '#ECF1FE', height: 7, borderRadius: 50},
         }}
       >
         <TopTab.Screen name="Explorar" component={exploreScreen} />
