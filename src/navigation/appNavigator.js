@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Image, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -22,10 +22,18 @@ const BottomTab = createBottomTabNavigator();
 const InformationStack = createStackNavigator();
 const TrainingStack = createStackNavigator();
 
+const MyTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background:'#fff'
+  },
+};
+
 //Main Navigator
 const AppNavigator = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme}>
       <BottomTab.Navigator
         initialRouteName={homeScreen}
         screenOptions={{
@@ -96,7 +104,7 @@ function TrainingStackScreen() {
       headerShown: false
     }}
     >
-      <TrainingStack.Screen name="Formación" component={trainingScreen} options={{headerShown: false}}/>
+      <TrainingStack.Screen name="Training" component={trainingScreen} options={{headerShown: false}}/>
       <TrainingStack.Screen name="TopMenu" component={courseTopMenu} />
     </TrainingStack.Navigator>
   );
