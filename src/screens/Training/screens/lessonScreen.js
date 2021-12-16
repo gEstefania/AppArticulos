@@ -1,10 +1,60 @@
 import * as React from 'react';
-import { View, Text } from "react-native";
+import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import VideoThumbnail from '../components/videoThumbnail';
+import styles from './styles/lessonScreen';
 
-const lessonScreen = () => {
+const lessonScreen = ({navigation}) => {
+    const dataList = [
+        {
+            name: 'Paso 1',
+        },
+        {
+            name: 'Paso 2',
+        },
+        {
+            name: 'Paso 3',
+        },
+        {
+            name: 'Paso 4',
+        },
+        {
+            name: 'Paso 5',
+        },
+        {
+            name: 'Paso 6',
+        },
+        {
+            name: 'Paso 7',
+        },
+        {
+            name: 'Paso 8',
+        },
+      ];
+
+    const renderList = ({item}) => {
+        return (
+            <TouchableOpacity
+                onPress={() => navigation.navigate("LessonVideo" )}
+                style={styles.btnSteps}
+            >
+                <View style={styles.thumbnailContainer}>
+                    <VideoThumbnail/>
+                </View>
+                <View style={styles.descContainer}>
+                    <Text style={styles.btnText}>{item.name}</Text>
+                    <Text style={styles.btnText}>Lorem Ipsum</Text>
+                </View>
+            </TouchableOpacity>
+        );
+    };
     return (
-        <View>
-            <Text>Lecciones del curso</Text>
+        <View style={styles.mainContainer}>
+            <FlatList
+                data={dataList}
+                renderItem={renderList}
+                //keyExtractor={item => item.id}
+                style={styles.btnList}
+            />
         </View>
     )
 }

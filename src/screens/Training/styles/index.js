@@ -47,6 +47,7 @@ export default StyleSheet.create({
   infoContainer:{
     flex: 1,
     flexDirection: 'column',
+    justifyContent: 'flex-end'
   },
   icon: {
     width: 25,
@@ -58,6 +59,7 @@ export default StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
+    marginTop: 10,
   },
   columnText:{
     marginLeft: 10,

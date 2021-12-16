@@ -2,7 +2,6 @@ import { View, Image, Text, TouchableOpacity } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import styles from './styles/index';
-import courseTopMenu from '../../navigation/courseTopMenu';
 
 const index = ({navigation}) => {
   const dataList = [
@@ -35,7 +34,7 @@ const index = ({navigation}) => {
   const renderList = ({item}) => {
     return (
       <TouchableOpacity
-        onPress={() => navigation.navigate("TopMenu")}
+        onPress={() => navigation.navigate("TopMenu", { courseTitle: item.name})}
         style={styles.btnCard}
       >
         <View style={styles.container}>
