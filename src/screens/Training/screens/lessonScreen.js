@@ -34,7 +34,7 @@ const lessonScreen = ({navigation}) => {
     const renderList = ({item}) => {
         return (
             <TouchableOpacity
-                onPress={() => navigation.navigate("LessonVideo" )}
+                onPress={() => navigation.navigate("LessonVideo")}
                 style={styles.btnSteps}
             >
                 <View style={styles.thumbnailContainer}>
