@@ -7,8 +7,6 @@ export default StyleSheet.create({
   },
   topicTitle: {
     fontSize: 30,
-    fontWeight: '800',
-    color: '#ff9b04'
   },
   imageBackground: {
     width: '100%',
@@ -18,7 +16,6 @@ export default StyleSheet.create({
     marginVertical: 20,
   },
   imageText: {
-    color: '#fff',
     maxWidth: '65%',
     padding: 30,
   },
@@ -35,8 +32,6 @@ export default StyleSheet.create({
   },
   btnText: {
     fontSize: 16,
-    color: '#fff',
-    fontWeight: '800',
     textTransform: 'uppercase',
   },
 });

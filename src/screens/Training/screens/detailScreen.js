@@ -1,29 +1,30 @@
 import * as React from 'react';
-import { View, Text, Image } from "react-native";
+import { View, Image } from "react-native";
 import styles from './styles/detailScreen';
+import { ScrollView } from 'react-native-gesture-handler';
+import {PrimaryText, SecondaryText} from '@common';
 
-const deatilScreen = ({route, navigation}) => {
-    console.log(route)
+const detailScreen = ({route, navigation}) => {
     return (
-        <View style={styles.mainContainer}>
+        <ScrollView style={styles.mainContainer}>
             <View style={styles.titleCard}>
-                <Text>{}</Text>
+                <PrimaryText style={styles.titleText}>Desde Cero</PrimaryText>
             </View>
             <View style={styles.detailCard}>
                 <View style={styles.imgContainer}>
                     <Image style={styles.img}/>
                 </View>
                 <View style={styles.nameCard}>
-                    <Text style={styles.speakerText}>Ponente</Text>
-                    <Text style={styles.nameSpeakerText}>Nombre Apellidos</Text>
-                    <Text>Cargo</Text>
+                    <SecondaryText style={styles.speakerText}>Ponente</SecondaryText>
+                    <SecondaryText style={styles.nameSpeakerText}>Nombre Apellidos</SecondaryText>
+                    <SecondaryText>Cargo</SecondaryText>
                 </View>
             </View>
             <View style={styles.contentView}>
-                <Text>Contenido</Text>
+                <SecondaryText>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</SecondaryText>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 
-export default deatilScreen;
+export default detailScreen;

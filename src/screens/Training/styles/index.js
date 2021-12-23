@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {Colors} from '@common';
 
 export default StyleSheet.create({
   mainContainer: {
@@ -14,8 +15,6 @@ export default StyleSheet.create({
     marginBottom: 20,
   },
   title: {
-    fontFamily: 'Poppins-Bold',
-    color: '#ff9b04', 
     fontSize: 20,
   },
   btnCard: {
@@ -32,7 +31,6 @@ export default StyleSheet.create({
   },
   cardTitle: {
     fontSize: 18,
-    color: '#ff9b04', 
   },
   container: {
     flex: 1,
@@ -55,7 +53,6 @@ export default StyleSheet.create({
   },
   infoText:{
     fontSize: 12,
-    color: '#ff9b04', 
   },
   row: {
     flexDirection: 'row',

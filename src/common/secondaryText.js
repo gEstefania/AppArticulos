@@ -5,6 +5,7 @@ const SecondaryText = (props) => {
   const styles = StyleSheet.create({
   font: {
       fontFamily: `Poppins-${props.type ? props.type : 'Regular'}`,
+      color: `${props.color ? props.color : '#000'}`,
     },
   });
   return (

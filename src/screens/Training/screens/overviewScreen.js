@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text, Image } from "react-native";
 import styles from './styles/overviewScreen';
+import {PrimaryText, SecondaryText} from '@common';
 
 const overviewScreen = () => {
     return (
@@ -9,25 +10,25 @@ const overviewScreen = () => {
                 <View style={styles.row}>
                     <Image source={require('../../../assets/img/icons/home.jpg')} style={styles.icon}/>
                     <View style={styles.columnText}>
-                        <Text style={styles.infoText}>6 videos</Text>
+                        <PrimaryText color={'#fff'}>6 videos</PrimaryText>
                     </View>
                 </View>
                 <View style={styles.row}>
                     <Image source={require('../../../assets/img/icons/home.jpg')} style={styles.icon}/>
                     <View style={styles.columnText}>
-                        <Text style={styles.infoText}>40 minutos</Text>
+                        <PrimaryText color={'#fff'}>40 minutos</PrimaryText>
                     </View>
                 </View>
                 <View style={styles.row}>
                     <Image source={require('../../../assets/img/icons/home.jpg')} style={styles.icon}/>
                     <View style={styles.columnText}>
-                        <Text style={styles.infoText}>2,122 inscritos</Text>
+                        <PrimaryText color={'#fff'}>2,122 inscritos</PrimaryText>
                     </View>
                 </View>
             </View>
             <View style={styles.descContainer}>
-                <Text>Aprenderemos a</Text>
-                <Text>autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+                <PrimaryText>Aprenderemos a</PrimaryText>
+                <SecondaryText>autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</SecondaryText>
             </View>
         </View>
     )

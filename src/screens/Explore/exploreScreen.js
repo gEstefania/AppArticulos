@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text } from "react-native";
 import Swiper from "react-native-swiper";
+import { PrimaryText } from '@common';
 import CardExplorer from './components/cardExplorer';
 import styles from './styles/explorerScreen';
 
@@ -20,16 +21,16 @@ const exploreScreen = () => {
               activeDotStyle= {styles.activeDotStyle}
             >
             <View style={styles.swiperContainer}>
-              <Text style={styles.titleSlide}>Avances Médicos</Text>
+              <PrimaryText color={'#fff'} style={styles.titleSlide}>Avances Médicos</PrimaryText>
             </View>
             <View style={styles.swiperContainer}>
-                <Text style={styles.titleSlide}>Lorem Ipsum</Text>
+                <PrimaryText color={'#fff'} style={styles.titleSlide}>Lorem Ipsum</PrimaryText>
             </View>
             <View style={styles.swiperContainer}>
-                <Text style={styles.titleSlide}>Lorem Ipsum</Text>
+                <PrimaryText color={'#fff'} style={styles.titleSlide}>Lorem Ipsum</PrimaryText>
             </View>
             <View style={styles.swiperContainer}>
-                <Text style={styles.titleSlide}>Lorem Ipsum</Text>
+                <PrimaryText color={'#fff'} style={styles.titleSlide}>Lorem Ipsum</PrimaryText>
             </View>
             </Swiper>
           </View>

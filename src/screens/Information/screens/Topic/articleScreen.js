@@ -1,5 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View} from 'react-native';
 import React, { useEffect, useState } from 'react';
+import {PrimaryText} from '@common';
 import styles from './styles/articleScreen';
 
 const article = ({route, navigation}) => {
@@ -37,13 +38,13 @@ const article = ({route, navigation}) => {
         onPress={() => navigation.navigate("Step", { title: item.name, color: color} )}
         style={[styles.btnSteps, {backgroundColor: color,}]}
       >
-        <Text style={styles.btnText}>{item.name}</Text>
+        <PrimaryText color={'#fff'} style={styles.btnText}>{item.name}</PrimaryText>
       </TouchableOpacity>
     );
   };
   return(
     <View style={styles.mainContainer}>
-      <Text style={[styles.titleArticle, {color: color ,}]}>{route.params.title}</Text>
+      <PrimaryText color={color} style={styles.titleArticle}>{route.params.title}</PrimaryText>
       <FlatList
         data={dataList}
         renderItem={renderList}

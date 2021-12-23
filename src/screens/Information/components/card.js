@@ -1,5 +1,6 @@
-import { FlatList, Text, TouchableOpacity, View} from 'react-native';
+import { FlatList, TouchableOpacity, View} from 'react-native';
 import React, { useEffect, useState } from 'react';
+import {PrimaryText} from '@common';
 import styles from './styles/card';
 
 const card = ({title, cardColor, navigation}) => {
@@ -24,10 +25,10 @@ const card = ({title, cardColor, navigation}) => {
   const renderList = ({item}) => {
     return (
       <TouchableOpacity
-      onPress={() => navigation.navigate("Article", { title: item.name, color: cardColor} )}
+        onPress={() => navigation.navigate("Article", { title: item.name, color: cardColor} )}
         style={[styles.cardView, {backgroundColor: cardColor}]}
       >
-        <Text style={styles.cardTitle}>{item.name}</Text>
+        <PrimaryText type={'Regular'} color={'#fff'} style={styles.cardTitle}>{item.name}</PrimaryText>
       </TouchableOpacity>
         
     );
@@ -36,11 +37,11 @@ const card = ({title, cardColor, navigation}) => {
   return(
     <View style={styles.mainContainer}>
       <View style={styles.titleContainer}>
-      <Text style={styles.titleSection}>{title}</Text>
+      <PrimaryText style={styles.titleSection}>{title}</PrimaryText>
         <TouchableOpacity
         onPress={() => navigation.navigate("Topic", { title: title, color: cardColor, data: dataList} )}
         >
-          <Text style={[styles.cardText, {color: cardColor}]}>Ver todo</Text>
+          <PrimaryText color={cardColor} style={styles.cardText}>Ver todo</PrimaryText>
         </TouchableOpacity>
       </View>
         <FlatList

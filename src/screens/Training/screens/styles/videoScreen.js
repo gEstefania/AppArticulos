@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {Colors} from '@common';
 
 export default StyleSheet.create({
   mainContainer:{
@@ -38,16 +39,20 @@ export default StyleSheet.create({
     padding: 20,
     borderWidth: 1,
     borderRadius: 20,
-    borderColor: '#ff9b04',
+    borderColor: Colors.CORPORATE_ORANGE,
   },
   downloadCard:{
     flexDirection: 'row',
     borderRadius: 20,
     paddingHorizontal: 35,
     paddingVertical: 25,
-    backgroundColor: '#ff9b04',
+    backgroundColor: Colors.CORPORATE_ORANGE,
   },
   sectionTitle:{
     marginBottom: 10,
   },
+  text: {
+    fontSize: 16,
+    textTransform: 'uppercase',
+  }
 });

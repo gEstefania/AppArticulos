@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { View, Text } from "react-native";
+import {PrimaryText, SecondaryText} from '@common';
 
 const contactScreen = () => {
     return (
         <View>
-            <Text> Hablemos </Text>
+            <PrimaryText> Hablemos </PrimaryText>
         </View>
     )
 }

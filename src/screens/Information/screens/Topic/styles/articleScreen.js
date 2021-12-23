@@ -7,7 +7,6 @@ export default StyleSheet.create({
   },
   titleArticle: {
     fontSize: 20,
-    fontWeight: '800',
     textTransform: 'uppercase',
   },
   btnList: {
@@ -24,7 +23,5 @@ export default StyleSheet.create({
   },
   btnText: {
     fontSize: 14,
-    fontWeight: '500',
-    color: '#fff',
   }
 });

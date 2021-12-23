@@ -14,8 +14,6 @@ export default StyleSheet.create({
   },
   bannerTitle: {
     maxWidth: 150,
-    color: '#fff',
-    fontFamily: 'Poppins-Regular',
     fontSize: 20,
   },
   btnStep: {
@@ -30,8 +28,5 @@ export default StyleSheet.create({
     height: 15,
     margin: 10,
     borderRadius: 100,
-  },
-  btnText:{
-    fontFamily: 'Poppins-Regular',
   },
 });

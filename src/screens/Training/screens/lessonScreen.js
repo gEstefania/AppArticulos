@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import VideoThumbnail from '../components/videoThumbnail';
+import {PrimaryText, SecondaryText} from '@common';
 import styles from './styles/lessonScreen';
 
 const lessonScreen = ({navigation}) => {
@@ -41,8 +42,8 @@ const lessonScreen = ({navigation}) => {
                     <VideoThumbnail/>
                 </View>
                 <View style={styles.descContainer}>
-                    <Text style={styles.btnText}>{item.name}</Text>
-                    <Text style={styles.btnText}>Lorem Ipsum</Text>
+                    <PrimaryText style={styles.btnText}>{item.name}</PrimaryText>
+                    <SecondaryText style={styles.btnText}>Lorem Ipsum</SecondaryText>
                 </View>
             </TouchableOpacity>
         );

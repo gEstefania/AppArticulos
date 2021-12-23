@@ -30,9 +30,10 @@ const courseTopMenu = ({route}) => {
     return (
       <LessonStack.Navigator
       screenOptions={{
-        headerTitle: "",
-        headerBackTitleVisible: false,
-        headerStyle: {shadowColor: '#fff'},
+        //headerTitle: "",
+        //headerBackTitleVisible: false,
+        //headerStyle: {shadowColor: '#fff'},
+        headerShown: false,
       }}
       >
         <LessonStack.Screen name="Information" component={lessonScreen} options={{headerShown: false}}/>

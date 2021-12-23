@@ -1,5 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View, Image} from 'react-native';
 import React, { useEffect, useState } from 'react';
+import {PrimaryText} from '@common';
 import styles from './styles/stepScreen';
 
 const stepScreen = ({route, navigation}) => {
@@ -42,11 +43,11 @@ const stepScreen = ({route, navigation}) => {
   const renderList = ({item}) => {
     return (
       <TouchableOpacity
-      onPress={() => navigation.navigate("Post", { title: item.name, color: color} )}
+        onPress={() => navigation.navigate("Post", { title: item.name, color: color} )}
         style={styles.btnStep}
       >
         <View style={[styles.circle, {backgroundColor: color}]}></View>
-        <Text style={styles.btnText}>{item.name}</Text>
+        <PrimaryText color={'#000'}>{item.name}</PrimaryText>
         <Image/>
       </TouchableOpacity>
     );
@@ -54,7 +55,7 @@ const stepScreen = ({route, navigation}) => {
   return(
     <View style={styles.mainContainer}>
       <View style={[styles.banner, {backgroundColor: color}]}>
-        <Text style={styles.bannerTitle}>{route.params.title}</Text>
+        <PrimaryText color={'#fff'} style={styles.bannerTitle}>{route.params.title}</PrimaryText>
       </View>
       <FlatList
         data={dataList}

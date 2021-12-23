@@ -3,18 +3,22 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     flex: 1,
-    marginHorizontal: 20,
+    paddingHorizontal: 20,
   },
   titleCard:{
     flex: 1,
     justifyContent: 'center',
     alignItems: 'flex-start',
-    paddingLeft: 20,
+    padding: 30,
     borderRadius: 18,
     backgroundColor: '#ECF1FE',
   },
+  titleText: {
+    fontSize: 18,
+  },
   detailCard: {
     flex: 1,
+    height: 120,
     flexDirection: 'row',
     paddingVertical: 20,
   },

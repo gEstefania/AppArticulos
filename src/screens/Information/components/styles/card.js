@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     flex: 1,
+    marginBottom: 20,
   },
   titleContainer: {
     flexDirection: 'row',
@@ -21,17 +22,11 @@ export default StyleSheet.create({
   },
   titleSection: {
     fontSize: 22,
-    fontWeight: '700',
-    color: '#ff5f00',
   },
   cardText: {
     fontSize: 14,
-    fontWeight: '700',
-    color: '#e55773',
   },
   cardTitle: {
     maxWidth: 80,
-    fontWeight: '600',
-    color: '#fff',
   },
 });

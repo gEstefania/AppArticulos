@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { Colors } from '@common';
 
 export default StyleSheet.create({
   mainContainer: {
@@ -15,11 +16,9 @@ export default StyleSheet.create({
     marginRight: 15,
     padding: 10,
     borderRadius: 15,
-    backgroundColor: '#e55773',
+    backgroundColor: Colors.PINK,
   },
   cardTitle:{
-    color: '#fff',
     fontSize: 12,
-    fontFamily: 'Poppins-Bold',
   },
 });

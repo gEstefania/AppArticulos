@@ -17,12 +17,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   columnText:{
-    marginLeft: 10,
+    marginLeft: 20,
     justifyContent: 'center',
-  },
-  infoText:{
-    color: '#fff',
-    fontFamily: 'Poppins-Bold',
   },
   descContainer: {
     flex: 2,

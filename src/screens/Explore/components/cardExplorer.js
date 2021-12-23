@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text, TouchableOpacity } from "react-native"
 import { FlatList } from 'react-native-gesture-handler';
+import { PrimaryText, SecondaryText } from '@common'
 import styles from './styles/cardExplorer';
 
 const cardExplorer = () => {
@@ -34,13 +35,13 @@ const cardExplorer = () => {
   const renderList = ({item}) => {
     return (
       <TouchableOpacity style={styles.btnCard}>
-        <Text style={styles.cardTitle}>{item.name}</Text>
+        <PrimaryText color={'#fff'} style={styles.cardTitle}>{item.name}</PrimaryText>
       </TouchableOpacity>
     );
   };
   return(
     <View style={styles.mainContainer}>
-      <Text>Recomendado</Text>
+      <SecondaryText>Recomendado</SecondaryText>
       <FlatList
         horizontal
         data={dataList}
