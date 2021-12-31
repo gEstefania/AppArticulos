@@ -5,7 +5,7 @@ import { PrimaryText } from '@common';
 import CardExplorer from './components/cardExplorer';
 import styles from './styles/explorerScreen';
 
-const exploreScreen = () => {
+const ExploreScreen = () => {
     return (
         <View style={styles.mainContainer}>
           <View style={styles.subContainer}>
@@ -39,4 +39,4 @@ const exploreScreen = () => {
     )
 }
 
-export default exploreScreen;
+export default ExploreScreen;

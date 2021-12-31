@@ -3,7 +3,7 @@ import { View, Text, Image } from "react-native";
 import styles from './styles/overviewScreen';
 import {PrimaryText, SecondaryText} from '@common';
 
-const overviewScreen = () => {
+const OverviewScreen = () => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.summaryContainer}>
@@ -34,4 +34,4 @@ const overviewScreen = () => {
     )
 }
 
-export default overviewScreen;
+export default OverviewScreen;

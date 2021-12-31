@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import {PrimaryText} from '@common';
 import styles from './styles/card';
 
-const card = ({title, cardColor, navigation}) => {
+const Card = ({title, cardColor, navigation}) => {
   const dataList = [
     {
       name: 'Conceptos básicos',
@@ -54,4 +54,4 @@ const card = ({title, cardColor, navigation}) => {
   )
 }
 
-export default card;
+export default Card;

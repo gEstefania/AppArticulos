@@ -4,7 +4,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import styles from './styles/index';
 import {PrimaryText, SecondaryText} from '@common';
 
-const index = ({navigation}) => {
+const Index = ({navigation}) => {
   const dataList = [
     {
       name: 'Desde cero',
@@ -87,4 +87,4 @@ const index = ({navigation}) => {
   )
 }
 
-export default index;
+export default Index;

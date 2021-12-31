@@ -4,7 +4,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import { PrimaryText, SecondaryText } from '@common'
 import styles from './styles/cardExplorer';
 
-const cardExplorer = () => {
+const CardExplorer = () => {
   const dataList = [
     {
       name: 'Destacados',
@@ -52,4 +52,4 @@ const cardExplorer = () => {
     </View>
   )
 }
-export default cardExplorer;
+export default CardExplorer;

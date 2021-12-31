@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import {PrimaryText} from '@common';
 import styles from './styles/stepScreen';
 
-const stepScreen = ({route, navigation}) => {
+const StepScreen = ({route, navigation}) => {
   const color = route.params.color;
   const dataList = [
     {
@@ -66,4 +66,4 @@ const stepScreen = ({route, navigation}) => {
   )
 }
 
-export default stepScreen;
+export default StepScreen;

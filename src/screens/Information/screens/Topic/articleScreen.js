@@ -2,9 +2,12 @@ import { FlatList, Text, TouchableOpacity, View} from 'react-native';
 import React, { useEffect, useState } from 'react';
 import {PrimaryText} from '@common';
 import styles from './styles/articleScreen';
+import Colors from '@common';
 
-const article = ({route, navigation}) => {
-  const color = route.params.color;
+const Article = ({route, navigation}) => {
+  
+  const color = route.params?.color || Colors.CORPORATE_ORANGE;
+
   const dataList = [
     {
       name: 'Lorem ipsum',
@@ -44,7 +47,7 @@ const article = ({route, navigation}) => {
   };
   return(
     <View style={styles.mainContainer}>
-      <PrimaryText color={color} style={styles.titleArticle}>{route.params.title}</PrimaryText>
+      <PrimaryText color={color} style={styles.titleArticle}>{route.params?.title}</PrimaryText>
       <FlatList
         data={dataList}
         renderItem={renderList}
@@ -57,4 +60,4 @@ const article = ({route, navigation}) => {
   )
 }
 
-export default article;
+export default Article;

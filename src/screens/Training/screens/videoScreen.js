@@ -6,7 +6,7 @@ import styles from './styles/videoScreen';
 import Video from 'react-native-video';
 import vid from './video.mp4';
 
-const videoScreen = () => {
+const VideoScreen = () => {
     //const video = 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'
     return(
         <ScrollView style={styles.mainContainer}>
@@ -50,4 +50,4 @@ const videoScreen = () => {
     )
 };
 
-export default videoScreen;
+export default VideoScreen;

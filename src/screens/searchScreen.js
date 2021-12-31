@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text } from "react-native";
 import {PrimaryText, SecondaryText} from '@common';
 
-const searchScreen = () => {
+const SearchScreen = () => {
     return (
         <View>
             <PrimaryText>Buscar</PrimaryText>
@@ -10,4 +10,4 @@ const searchScreen = () => {
     )
 }
 
-export default searchScreen;
+export default SearchScreen;

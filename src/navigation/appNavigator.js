@@ -5,17 +5,20 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LinearGradient from 'react-native-linear-gradient';
-import exploreScreen from '../screens/Explore/exploreScreen';
-import infoScreen from '../screens/Information/index';
-import trainingScreen from '../screens/Training/index';
-import topicScreen from '../screens/Information/screens/Topic/topicScreen';
-import articleScreen from '../screens/Information/screens/Topic/articleScreen';
-import stepScreen from '../screens/Information/screens/Topic/stepScreen';
-import postScreen from '../screens/Information/screens/Topic/postScreen';
-import profileScreen from '../screens/profileScreen';
-import searchScreen from '../screens/searchScreen';
-import contactScreen from '../screens/contactScreen';
-import courseTopMenu from './courseTopMenu';
+import ExploreScreen from '../screens/Explore/exploreScreen';
+import InfoScreen from '../screens/Information/index';
+import TrainingScreen from '../screens/Training/index';
+import TopicScreen from '../screens/Information/screens/Topic/topicScreen';
+import ArticleScreen from '../screens/Information/screens/Topic/articleScreen';
+import StepScreen from '../screens/Information/screens/Topic/stepScreen';
+import PostScreen from '../screens/Information/screens/Topic/postScreen';
+import ProfileScreen from '../screens/profileScreen';
+import SearchScreen from '../screens/searchScreen';
+import ContactScreen from '../screens/contactScreen';
+import CourseTopMenu from './courseTopMenu';
+import Login from '../screens/Auth/login';
+import SignUp from '../screens/Auth/signUp';
+import Topic from '../screens/tags';
 
 const TopTab = createMaterialTopTabNavigator();
 const BottomTab = createBottomTabNavigator();
@@ -41,9 +44,9 @@ const AppNavigator = () => {
         }}
       >
         <BottomTab.Screen name="Inicio" component={homeScreen}/>
-        <BottomTab.Screen name="Perfil" component={profileScreen}/>
-        <BottomTab.Screen name="Buscar" component={searchScreen}/>
-        <BottomTab.Screen name="Hablemos" component={contactScreen}/>
+        <BottomTab.Screen name="Perfil" component={Login}/>
+        <BottomTab.Screen name="Buscar" component={SignUp}/>
+        <BottomTab.Screen name="Hablemos" component={Topic}/>
       </BottomTab.Navigator>
     </NavigationContainer>
   );
@@ -69,7 +72,7 @@ function homeScreen() {
           tabBarIndicatorStyle: {backgroundColor: '#ECF1FE', height: 7, borderRadius: 50},
         }}
       >
-        <TopTab.Screen name="Explorar" component={exploreScreen} />
+        <TopTab.Screen name="Explorar" component={ExploreScreen} />
         <TopTab.Screen name="Información" component={InformationStackScreen} />
         <TopTab.Screen name="Formación" component={TrainingStackScreen} />
     </TopTab.Navigator>
@@ -87,11 +90,11 @@ function InformationStackScreen() {
       headerStyle: {shadowColor: '#fff'},
     }}
     >
-      <InformationStack.Screen name="Information" component={infoScreen} options={{headerShown: false}}/>
-      <InformationStack.Screen name="Topic" component={topicScreen} />
-      <InformationStack.Screen name="Article" component={articleScreen} />
-      <InformationStack.Screen name="Step" component={stepScreen} />
-      <InformationStack.Screen name="Post" component={postScreen} />
+      <InformationStack.Screen name="Information" component={InfoScreen} options={{headerShown: false}}/>
+      <InformationStack.Screen name="Topic" component={TopicScreen} />
+      <InformationStack.Screen name="Article" component={ArticleScreen} />
+      <InformationStack.Screen name="Step" component={StepScreen} />
+      <InformationStack.Screen name="Post" component={PostScreen} />
     </InformationStack.Navigator>
   );
 };
@@ -104,8 +107,8 @@ function TrainingStackScreen() {
       headerShown: false
     }}
     >
-      <TrainingStack.Screen name="Training" component={trainingScreen} options={{headerShown: false}}/>
-      <TrainingStack.Screen name="TopMenu" component={courseTopMenu} />
+      <TrainingStack.Screen name="Training" component={TrainingScreen} options={{headerShown: false}}/>
+      <TrainingStack.Screen name="TopMenu" component={CourseTopMenu} />
     </TrainingStack.Navigator>
   );
 };

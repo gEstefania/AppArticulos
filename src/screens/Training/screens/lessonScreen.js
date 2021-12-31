@@ -4,7 +4,7 @@ import VideoThumbnail from '../components/videoThumbnail';
 import {PrimaryText, SecondaryText} from '@common';
 import styles from './styles/lessonScreen';
 
-const lessonScreen = ({navigation}) => {
+const LessonScreen = ({navigation}) => {
     const dataList = [
         {
             name: 'Paso 1',
@@ -60,4 +60,4 @@ const lessonScreen = ({navigation}) => {
     )
 }
 
-export default lessonScreen;
+export default LessonScreen;

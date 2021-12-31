@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import styles from './styles/index';
 import Card from './components/card';
 
-const index = (props) => {
+const Index = (props) => {
   return(
     <ScrollView style={styles.mainContainer}>
       <Card title={'Social'} cardColor={'#e55773'} navigation={props.navigation}/> 
@@ -13,4 +13,4 @@ const index = (props) => {
     </ScrollView>
   )
 }
-export default index;
+export default Index;

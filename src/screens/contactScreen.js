@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text } from "react-native";
 import {PrimaryText, SecondaryText} from '@common';
 
-const contactScreen = () => {
+const ContactScreen = () => {
     return (
         <View>
             <PrimaryText> Hablemos </PrimaryText>
@@ -10,4 +10,4 @@ const contactScreen = () => {
     )
 }
 
-export default contactScreen;
+export default ContactScreen;

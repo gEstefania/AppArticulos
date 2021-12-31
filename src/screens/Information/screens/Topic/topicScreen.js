@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import {PrimaryText, SecondaryText} from '@common';
 import styles from './styles/topicScreen';
 
-const topic = ({route, navigation}) => {
+const Topic = ({route, navigation}) => {
   const color = route.params.color;
   const dataList = route.params.data;
 
@@ -36,4 +36,4 @@ const topic = ({route, navigation}) => {
   )
 }
 
-export default topic;
+export default Topic;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View } from "react-native";
 import {PrimaryText, SecondaryText} from '@common';
 
-const profileScreen = () => {
+const ProfileScreen = () => {
     return (
         <View>
             <PrimaryText>Perfil de usuario</PrimaryText>
@@ -10,4 +10,4 @@ const profileScreen = () => {
     )
 }
 
-export default profileScreen;
+export default ProfileScreen;

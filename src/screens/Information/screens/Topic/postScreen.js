@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import {PrimaryText, SecondaryText} from '@common';
 import styles from './styles/postScreen';
 
-const post = ({route}) => {
+const Post = ({route}) => {
     const color = route.params.color;
     return(
         <View style={styles.mainContainer}>
@@ -28,4 +28,4 @@ const post = ({route}) => {
     )
 }
 
-export default post;
+export default Post;

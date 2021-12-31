@@ -4,7 +4,7 @@ import styles from './styles/detailScreen';
 import { ScrollView } from 'react-native-gesture-handler';
 import {PrimaryText, SecondaryText} from '@common';
 
-const detailScreen = ({route, navigation}) => {
+const DetailScreen = ({route, navigation}) => {
     return (
         <ScrollView style={styles.mainContainer}>
             <View style={styles.titleCard}>
@@ -27,4 +27,4 @@ const detailScreen = ({route, navigation}) => {
     )
 }
 
-export default detailScreen;
+export default DetailScreen;
