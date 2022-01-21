@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* AppArticulosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AppArticulosTests.m */; };
+		034218AD27971C440011C76B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 034218AC27971C440011C76B /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -32,6 +33,7 @@
 		00E356EE1AD99517003FC87E /* AppArticulosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppArticulosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AppArticulosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppArticulosTests.m; sourceTree = "<group>"; };
+		034218AC27971C440011C76B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AppArticulos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppArticulos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppArticulos/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppArticulos/AppDelegate.m; sourceTree = "<group>"; };
@@ -42,9 +44,9 @@
 		22E5DA2B97718CBE09BF61FA /* libPods-AppArticulos-AppArticulosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppArticulos-AppArticulosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48798CFF5B4897DAAD956624 /* Pods-AppArticulos-AppArticulosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos-AppArticulosTests.release.xcconfig"; path = "Target Support Files/Pods-AppArticulos-AppArticulosTests/Pods-AppArticulos-AppArticulosTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppArticulos/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8F0FED5F07EB47F8BB3C0326 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		9110D9253EFB65618EBE01E1 /* Pods-AppArticulos-AppArticulosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos-AppArticulosTests.debug.xcconfig"; path = "Target Support Files/Pods-AppArticulos-AppArticulosTests/Pods-AppArticulos-AppArticulosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		DCD1E1AF7FEF90B264058CE4 /* Pods-AppArticulos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppArticulos.debug.xcconfig"; path = "Target Support Files/Pods-AppArticulos/Pods-AppArticulos.debug.xcconfig"; sourceTree = "<group>"; };
 		E5DB2603C408B1CADC37BEE3 /* libPods-AppArticulos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppArticulos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				034218AC27971C440011C76B /* GoogleService-Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -107,7 +110,6 @@
 				A499A2DE2A974CB8B219D511 /* Poppins-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -128,7 +130,6 @@
 				9110D9253EFB65618EBE01E1 /* Pods-AppArticulos-AppArticulosTests.debug.xcconfig */,
 				48798CFF5B4897DAAD956624 /* Pods-AppArticulos-AppArticulosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -260,6 +261,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				034218AD27971C440011C76B /* GoogleService-Info.plist in Resources */,
 				91EFCFD15E7740E0AB420423 /* Poppins-Bold.ttf in Resources */,
 				2621283F385045D094BCC52F /* Poppins-Regular.ttf in Resources */,
 			);
